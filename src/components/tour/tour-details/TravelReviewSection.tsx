@@ -3,7 +3,7 @@
 
 import React from "react";
 import { Star, Flag, ThumbsUp } from "lucide-react";
-import SortDropdown from "./SortDropDown";
+import SortDropdown from "../common/SortDropDown";
 import { cn } from "@/lib/utils";
 
 const reviewDistribution = [
@@ -44,7 +44,7 @@ const TravelerReviewsSection = () => {
             {[...Array(5)].map((_, i) => (
               <Star
                 key={i}
-                size={20}
+                size={15}
                 className={cn(
                   i < review.rating
                     ? "text-yellow-500 fill-current"
@@ -56,7 +56,7 @@ const TravelerReviewsSection = () => {
 
           <h4 className="text-xl font-semibold mb-1">{review.heading}</h4>
 
-          <p className="text-sm italic text-gray-500 mb-2">
+          <p className="text-sm italic text-gray-300 mb-2">
             {review.travelerName}
           </p>
         </div>
@@ -72,7 +72,7 @@ const TravelerReviewsSection = () => {
         </div>
       </div>
 
-      <p className="text-gray-700">{review.content}</p>
+      <p className="text-gray-200">{review.content}</p>
     </div>
   );
 

@@ -1,19 +1,19 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import HighlightsItemCard from "./HighlightsItemCard";
-import PackageItemCard from "./PackageItemCard";
-import StickyBookingSidebar from "./StickyBookingSidebar";
-import TourItinerary from "./TourItinerary";
+import HighlightsItemCard from "./tour/tour-details/HighlightsItemCard";
+import PackageItemCard from "./tour/tour-details/PackageItemCard";
+import StickyBookingSidebar from "./tour/tour-details/StickyBookingSidebar";
+import TourItinerary from "./tour/tour-details/TourItinerary";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import TourMap from "./TourMap";
-import WhatsIncludedSection from "./WhatsIncludedSecton";
-import MeetingPickupSection from "./MeetingPickupSection";
-import TravelerReviewsSection from "./TravelReviewSection";
-import FAQ from "./FAQ";
-import TourItemCard from "./TourItemCard";
+import TourMap from "./tour/tour-details/TourMap";
+import WhatsIncludedSection from "./tour/tour-details/WhatsIncludedSecton";
+import MeetingPickupSection from "./tour/tour-details/MeetingPickupSection";
+import TravelerReviewsSection from "./tour/tour-details/TravelReviewSection";
+import FAQ from "./tour/tour-details/FAQ";
+import TourItemCard from "./tour/common/TourItemCard";
 
 const tours = [
   {

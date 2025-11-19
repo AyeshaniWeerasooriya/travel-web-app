@@ -1,8 +1,8 @@
 import React from "react";
 import { Check } from "lucide-react";
-import AvailabilitySelector from "./AvailabilitySelector";
+import AvailabilitySelector from "../common/AvailabilitySelector";
 import PackageSummary from "./PackageSummary";
-import TrustBadges from "./TrustBadges";
+import TrustBadges from "../common/TrustBadges";
 
 const StickyBookingSidebar = () => {
   return (
